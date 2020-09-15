@@ -15,8 +15,9 @@ Alert.propTypes = {
 	alerts: PropTypes.array.isRequired
 };
 
+// maping redux state to props
 const mapStateToProps = (state) => ({
-	alerts: state.alert
+	alerts: state.alert //state od root reducerot alert
 });
 
 export default connect(mapStateToProps)(Alert);
