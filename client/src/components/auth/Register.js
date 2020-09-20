@@ -110,7 +110,7 @@ Register.propTypes = {
 	register: PropTypes.func.isRequired
 };
 
-//connect dobiva state od reducer = null ,
+//connect dobiva state objekt od reducer = null koj ako ne e null moze da go primime vo komponentata kako props,
 // i objekt od akcii sto kje koristime{setAlert ,register} koj gi dobivame kako props
 
 export default connect(null, { setAlert, register })(Register);
